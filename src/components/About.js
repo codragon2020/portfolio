@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import greentech9 from "../greentech9.jpg";
+import greenai from "../greenai.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
@@ -25,7 +25,7 @@ export default function About() {
     
     return (
         <main className="relative">
-            <img src={greentech9} alt="Green Tech Pic" className="absolute w-full" />
+            <img src={greenai} alt="Green Tech Pic" className="absolute w-full" />
             <div className="p-10 lg:pt-48 container mx-auto relative">
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
                     <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name} />

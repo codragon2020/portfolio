@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -12,6 +18,7 @@ export default function Project() {
             date,
             place,
             description,
+            "projectImage": image.asset->url,
             projectType,
             link,
             tags
@@ -66,10 +73,13 @@ export default function Project() {
                   >
                     View The Project{" "}
                     <span role="img" aria-label="right pointer">
-                      👉
+                      ▶
                     </span>
+                    <span><img src={urlFor(project.projectImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={projectData.name} /></span>
                   </a>
+                  
                 </div>
+                
               </article>
             ))}
         </section>

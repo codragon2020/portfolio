@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../green-tech-11.jpg";
+import image from "../images/green-tech-11.jpg";
 
 export default function Home() {
   return (

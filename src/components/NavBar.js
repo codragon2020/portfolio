@@ -59,6 +59,29 @@ export default function NavBar({ fixed }) {
               </li>
             </ul>
           </div>
+          <div className="inline-flex py-3 px-3 my-6">
+          <SocialIcon
+            url="https://www.linkedin.com/in/jasonmcginthy/"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url="https://github.com/codragon2020"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url="https://twitter.com/jasonmcginthy?lang=en"
+            className="mr-4"
+            target="_blank"
+            fgColor="#fff"
+            style={{ height: 35, width: 35 }}
+          />
+        </div>
         </div>
       </nav>
     </>

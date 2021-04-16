@@ -6,7 +6,7 @@ export default function NavBar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="bg-green-600 relative flex flex-wrap items-center justify-between px-2 py-3 mb-3">
+      <nav className="bg-green-600 relative flex flex-wrap items-center justify-between px-2 py-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink
@@ -28,7 +28,7 @@ export default function NavBar({ fixed }) {
           <div
             className={
               "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              (!navbarOpen ? " flex" : " hidden")
             }
             id="example-navbar-danger"
           >

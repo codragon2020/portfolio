@@ -16,3 +16,6 @@
 /* .home-name {
   font-size: 150px;
 } */
+
+/* Add a wrapper div and display:flex
+Add media queries max-width whereever burger shows up, then add property for flex-direction: column-reverse to the wrapper div */

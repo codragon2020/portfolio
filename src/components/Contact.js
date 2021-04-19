@@ -12,7 +12,7 @@ export default function Contact() {
           <ul className="flex flex-col text-2xl ">
             <li>Email: jasonmcginthy@gmail.com</li>
             <li>Phone: 804-389-0908</li>
-            <li className="text-green-600 hover:text-blue-800">
+            <li className="text-green-800 hover:text-blue-800">
               <a
                 href="https://drive.google.com/file/d/1VU7L00X-2CwBd74S3RpmNdkKifcUPNGg/view?usp=sharing"
                 target="_blank"

@@ -41,7 +41,7 @@ export default function About() {
           />
           <NavLink
               to="/contact"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-blue-800"
+              className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-600 hover:text-green-200"
             >
               Contact Information
             </NavLink>

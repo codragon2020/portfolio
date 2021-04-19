@@ -40,6 +40,10 @@ export default {
       },
     },
     {
+      name: "github",
+      type: "url",
+    },
+    {
       name: "link",
       type: "url",
     },

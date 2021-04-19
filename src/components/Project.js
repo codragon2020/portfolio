@@ -20,6 +20,7 @@ export default function Project() {
             description,
             "projectImage": image.asset->url,
             projectType,
+            github,
             link,
             tags
         }`
@@ -66,12 +67,24 @@ export default function Project() {
                     {project.description}
                   </p>
                   <a
+                    href={project.github}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                  >
+                    View Github{" "}
+                    <span role="img" aria-label="laptop computer">
+                      💻
+                    </span>
+                  </a>
+                  <br></br>
+                  <a
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
                   >
-                    View The Project{" "}
+                    Deployed Project{" "}
                     <span role="img" aria-label="right pointer">
                       ▶
                     </span>

@@ -2,7 +2,8 @@
   <h1 align="center">👋 My Portfolio 👨‍💻</h1>
 
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
-
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/8a6f7585-7a9d-406e-8f74-ce9dd6b18a2d/deploy-status)](https://app.netlify.com/sites/jmcginthyportfolio/deploys)
+  
   ## Description
 🔍 This project makes use of my new React skills and searching for other technology implementations discussed with my educators at the University of Richmond.
 
